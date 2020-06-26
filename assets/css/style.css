@@ -48,10 +48,14 @@ header img {
     width: 50%;
 }
 
-.row { 
+.container {
+    margin-top: 20px;
     width: 90%;
     max-width: 900px;
     margin: auto;
+}
+
+.row { 
     margin-top: 20px;
     padding: 5px;
     position: relative;
@@ -90,7 +94,7 @@ header img {
     position: absolute;
     width: 40px;
     height: 40px;
-    top: 5px;
+    top: 10px;
     right: 5px;
     font-size: 20px;
     border-radius: 50%;
@@ -107,6 +111,39 @@ header img {
 .save:active {
     transform: translateY(4px);
   }
+
+
+.key {
+    font-size: 16px;
+    text-align: center;
+}
+
+.past {
+    background: #4f625c;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.present {
+    background: #7f8e89;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+
+.future {
+    background: #e0dfe5;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+
+
+
+
+
+
 
 
 
