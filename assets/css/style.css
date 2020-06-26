@@ -50,19 +50,20 @@ header img {
 
 .container {
     margin-top: 20px;
+    margin-bottom: 50px;
     width: 90%;
     max-width: 900px;
     margin: auto;
 }
 
 .row { 
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 5px;
     position: relative;
 }
 
 .time {
-    margin-top: 10px;
+    margin-top: 15px;
     font-size: 20px;
     font-family: 'Oswald', Sans-Serif;
     font-weight: 700;
@@ -78,11 +79,13 @@ header img {
 
 .input-text textarea {
     font-family: 'Quattrocento', Serif;
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px;
     width: 100%;
     color: #334134;
     border: none;
+    height:30px;
+    padding-top:20px;
 }
 
 .input-text textarea:hover {
@@ -102,6 +105,7 @@ header img {
     color: white;
     background: #334134;
     border: 2px solid white;
+    margin: auto;
 }
 
 .save:hover {

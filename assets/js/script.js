@@ -28,7 +28,7 @@ function setUpTimedElements() {
         if (i < currentHour) {
             $("#" + i).children(".input-text").children().css({"background-color": "#4f625c", "color": "white"});
         } else if (i === currentHour) {
-            $("#" + i).children(".input-text").children().css("background-color", "#7f8e89");
+            $("#" + i).children(".input-text").children().css({"background-color": "#7f8e89", "color": "white"});
         } else {
             $("#" + i).children(".input-text").children().css("background-color", "#e0dfe5");
         }
