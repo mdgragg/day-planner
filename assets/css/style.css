@@ -62,7 +62,8 @@ header img {
 }
 
 .time {
-    margin-top: 5px;
+    margin-top: 10px;
+    font-size: 20px;
     font-family: 'Oswald', Sans-Serif;
     font-weight: 700;
 }
@@ -70,7 +71,7 @@ header img {
 .input-text {
     position: absolute;
     top: 3px;
-    right: 15px;
+    right: 45px;
     left: 65px;
     
 }
@@ -81,11 +82,11 @@ header img {
     padding: 10px;
     width: 100%;
     color: #334134;
+    border: none;
 }
 
 .input-text textarea:hover {
-    background: #e0dfe5 !important;
-    color: #334134;
+    opacity: 70%;
     width: 100%;
     border: none;
 }
