@@ -1,3 +1,5 @@
+body {font-family: 'Quattrocento', Serif;}
+
 header {
     background: #334134;
     margin-top: -10px;
@@ -9,6 +11,7 @@ header {
 header h1 { 
     color: #7f8e89;
     font-family: 'Oswald', Sans-Serif;
+    line-height: 70px;
     font-weight: 700;
     font-Size: 68px;    
     margin-top: 20px;
@@ -17,10 +20,10 @@ header h1 {
 
 header p { 
     color: #7f8e89;
-    Font-Family: 'Quattrocento', Serif;
+    font-family: 'Quattrocento', Serif;
     font-Size: 24px; 
     line-height: normal;
-    margin-top: -40px;
+    margin-top: -30px;
 }
 
 #date {
@@ -45,12 +48,65 @@ header img {
     width: 50%;
 }
 
+.row { 
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+    position: relative;
+}
 
+.time {
+    margin-top: 5px;
+    font-family: 'Oswald', Sans-Serif;
+    font-weight: 700;
+}
 
+.input-text {
+    position: absolute;
+    top: 3px;
+    right: 15px;
+    left: 65px;
+    
+}
 
+.input-text textarea {
+    font-family: 'Quattrocento', Serif;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+    color: #334134;
+}
 
+.input-text textarea:hover {
+    background: #e0dfe5 !important;
+    color: #334134;
+    width: 100%;
+    border: none;
+}
 
+.save {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+    border-radius: 50%;
+    color: white;
+    background: #334134;
+    border: 2px solid white;
+}
 
+.save:hover {
+    color: #334134;
+    background: #7f8e89;
+}
+
+.save:active {
+    transform: translateY(4px);
+  }
 
 
 
@@ -59,9 +115,6 @@ header img {
  
     header {
         background: #334134;
-        margin-top: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
         height: 320px;
     }
     
@@ -91,6 +144,10 @@ header img {
     }
 
     #date { margin-top: 10px;}
+
+
+ 
+
 
 
   }
