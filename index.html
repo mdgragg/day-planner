@@ -7,9 +7,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <script src="https://unpkg.com/moment"></script> 
+
     <script src="https://kit.fontawesome.com/3b94be4535.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/moment"></script> 
+    
 
     <title>Day Planner</title>
 </head>
@@ -31,10 +33,10 @@
             Future = <span class="future"> &nbsp;&nbsp; &nbsp;&nbsp;</span>
         </p>
 
-        <div class="row" id="9">
+       <!-- <div class="row" id="9">
             <div class="time">9 AM</div>
             <div class="input-text">
-                <textarea rows="1"> </textarea>
+                <textarea type="text" rows="1"> </textarea>
             </div>
             <div>
                 <button type="button" class="save fa fa-floppy-o"></button>
@@ -119,7 +121,108 @@
             <div>
                 <button type="button" class="save fa fa-floppy-o"></button>
             </div>
+        </div>-->
+
+
+
+        <div class="container" id="9">
+            <div class="row h-100">
+                <p class="col-sm-1 my-auto time-block">9:00</p>
+                <div class="inputText col-sm-8" id ="9"><textarea class="form-control" id="textarea"></textarea></div>
+                <button class="save col-sm-2">Save</button>
+            </div>
         </div>
+
+        <div id="8">
+            <div class="row">
+                <p class="time">9 AM</p>
+                <div class="input-text">
+                    <textarea rows="1" id="textarea"></textarea>
+                </div>
+                <button type="button" class="save fa fa-floppy-o"></button>
+            </div>
+        </div>
+
+        <div id="10">
+            <div class="row">
+                <p class="time">10 AM</p>
+                <div class="input-text">
+                    <textarea rows="1" id="textarea"></textarea>
+                </div>
+                <button type="button" class="save fa fa-floppy-o"></button>
+            </div>
+        </div>
+
+        <div id="11">
+            <div class="row">
+                <p class="time">11 AM</p>
+                <div class="input-text">
+                    <textarea rows="1" id="textarea"></textarea>
+                </div>
+                <button type="button" class="save fa fa-floppy-o"></button>
+            </div>
+        </div>
+
+        <div id="12">
+            <div class="row">
+                <p class="time">12 PM</p>
+                <div class="input-text">
+                    <textarea rows="1" id="textarea"></textarea>
+                </div>
+                <button type="button" class="save fa fa-floppy-o"></button>
+            </div>
+        </div>
+
+        <div id="13">
+            <div class="row">
+                <p class="time">1 PM</p>
+                <div class="input-text">
+                    <textarea rows="1" id="textarea"></textarea>
+                </div>
+                <button type="button" class="save fa fa-floppy-o"></button>
+            </div>
+        </div>
+
+        <div id="14">
+            <div class="row">
+                <p class="time">2 PM</p>
+                <div class="input-text">
+                    <textarea rows="1" id="textarea"></textarea>
+                </div>
+                <button type="button" class="save fa fa-floppy-o"></button>
+            </div>
+        </div>
+
+        <div id="15">
+            <div class="row">
+                <p class="time">3 PM</p>
+                <div class="input-text">
+                    <textarea rows="1" id="textarea"></textarea>
+                </div>
+                <button type="button" class="save fa fa-floppy-o"></button>
+            </div>
+        </div>
+
+        <div id="16">
+            <div class="row">
+                <p class="time">4 PM</p>
+                <div class="input-text">
+                    <textarea rows="1" id="textarea"></textarea>
+                </div>
+                <button type="button" class="save fa fa-floppy-o"></button>
+            </div>
+        </div>
+        
+        <div class="last" id="17">
+            <div class="row">
+                <p class="time">4 PM</p>
+                <div class="input-text">
+                    <textarea rows="1" id="textarea"></textarea>
+                </div>
+                <button type="button" class="save fa fa-floppy-o"></button>
+            </div>
+        </div>
+
     </div>
 
     <script src="assets/js/script.js"></script>
