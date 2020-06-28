@@ -1,8 +1,4 @@
-
-var tempArray = [];
-var storedAppointments;
-var returnedAppointments;
-
+var planner = [];
 
 
 function setUpTimedElements() {
@@ -32,18 +28,15 @@ function setUpPlanner() {
     }
 }
 
-//rename these
 
 $(window).on("load", function () {
-   
-
-    function renderAppointments() {
-        storedAppointments = JSON.parse(localStorage.getItem("inputs"));
-        if (storedAppointments !== null) {
-            for (i = 0; i < storedAppointments.length; i++) {
-                returnedAppointments = storedAppointments[i];
-                details = returnedAppointments.details;
-                timeIndex = returnedAppointments.time;
+    function renderTasks() {
+        storedTasks = JSON.parse(localStorage.getItem("inputs"));
+        if (storedTasks !== null) {
+            for (i = 0; i < storedTasks.length; i++) {
+                returnedTasks = storedTasks[i];
+                details = returnedTasks.details;
+                timeIndex = returnedTasks.time;
                 timeIndex = timeIndex.replace(":00", '');
                 if (details !== null) {
                     $("#" + timeIndex).children('div').children('div').children('textarea').val(details);
@@ -52,29 +45,28 @@ $(window).on("load", function () {
         }
     }
 
-    renderAppointments();
+    renderTasks();
 
 })
 
-// rename these
 
 $(".save").click(function () {
-    appointText = $(this).parent('div').children('div').children('textarea').val();
-    appointTime = $(this).parent('div').parent().attr("id");
-    appointment = {
-        time: appointTime,
-        details: appointText
+    tasksText = $(this).parent('div').children('div').children('textarea').val();
+    tasksTime = $(this).parent('div').parent().attr("id");
+    tasks = {
+        time: tasksTime,
+        details: tasksText
     }
     planner = JSON.parse(localStorage.getItem("inputs"));
     if (planner === null) {
-        localStorage.setItem('inputs', JSON.stringify([{ time: appointTime, details: appointText }]));
+        localStorage.setItem('inputs', JSON.stringify([{ time: tasksTime, details: tasksText }]));
     }
     else {
-        planner.push(appointment);
+        planner.push(tasks);
         localStorage.setItem("inputs", JSON.stringify(planner));
 
     }
-    $(this).parent('div').children('div').children('textarea').replaceWith($('<textarea>' + appointText.addClass("textarea") + '</textarea>'));
+    $(this).parent('div').children('div').children('textarea').replaceWith($('<textarea>' + tasksText.addClass("textarea") + '</textarea>'));
 })
 
 

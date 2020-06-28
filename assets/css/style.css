@@ -1,7 +1,5 @@
 body {font-family: 'Quattrocento', Serif;}
 
-
-
 header {
     background: #334134;
     margin-top: -10px;
@@ -23,7 +21,7 @@ header h1 {
 header p { 
     color: #7f8e89;
     font-family: 'Quattrocento', Serif;
-    font-Size: 24px; 
+    font-Size: 26px; 
     line-height: normal;
     margin-top: -30px;
 }
@@ -49,13 +47,6 @@ header img {
     vertical-align: middle;
     width: 50%;
 }
-
-
-
-
-
-
-
 
 
 .container {
@@ -109,7 +100,6 @@ header img {
     border: none;
 }
 
-
 .save {
     position: absolute;
     width: 40px;
@@ -131,8 +121,6 @@ header img {
 .save:active {
     transform: translateY(4px);
   }
-
-
 
 
 
@@ -161,13 +149,6 @@ header img {
     width: 20px;
     height: 20px;
   }
-
-
-
-
-
-
-
 
 
 
@@ -206,10 +187,6 @@ header img {
     }
 
     #date { margin-top: 10px;}
-
-
- 
-
 
 
   }
