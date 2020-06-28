@@ -12,13 +12,13 @@ The current date is displayed in the header on top of the page.
 
 Below the header are nine timeblocks, one for each hour of the work day. Colors indicate if the timeblock is in the past, present, or future.
 
-<img src="https://raw.githubusercontent.com/mdgragg/day-planner/master/assets/images/screenshots/3.png" width="450" />
+<img src="https://raw.githubusercontent.com/mdgragg/day-planner/master/assets/images/screenshots/3.png" width="400" />
 
-After a task is entered into the timeblock the user can save the task by clicking the button with the save icon on it.
+After a task is entered into the timeblock the user can save the task in local storage by clicking the button with the save icon on it.
 
-<img src="https://raw.githubusercontent.com/mdgragg/day-planner/master/assets/images/screenshots/4.png" width="450" />
+<img src="https://raw.githubusercontent.com/mdgragg/day-planner/master/assets/images/screenshots/4.png" width="400" />
 
-Schedule is completely mobile friendly.
+Work Day Schedule is completely mobile friendly.
 
 <img src="https://raw.githubusercontent.com/mdgragg/day-planner/master/assets/images/screenshots/5.png" width="300" />
 
