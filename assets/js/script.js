@@ -11,11 +11,11 @@ function setUpTimedElements() {
     var currentHour = parseInt(moment().format("H"));
     for (var i = 9; i < 18; i++) {
         if (i < currentHour) {
-            $("#" + i).children(".input-text").children().css({"background-color": "#4f625c", "color": "white"});
+            $("#" + i).children('div').children(".input-text").children().css({"background-color": "#4f625c", "color": "white"});
         } else if (i === currentHour) {
-            $("#" + i).children(".input-text").children().css({"background-color": "#7f8e89", "color": "white"});
+            $("#" + i).children('div').children(".input-text").children().css({"background-color": "#7f8e89", "color": "white"});
         } else {
-            $("#" + i).children(".input-text").children().css("background-color", "#e0dfe5");
+            $("#" + i).children('div').children(".input-text").children().css("background-color", "#e0dfe5");
         }
     }
 }
